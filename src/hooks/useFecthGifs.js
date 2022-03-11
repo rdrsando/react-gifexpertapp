@@ -10,7 +10,6 @@ export const useFecthGifs = (category) => {
   useEffect(() => {
     getGifs(category).then((imgs) => {
       //   setTimeout(() => {
-      // console.log(imgs);
       setState({
         data: imgs,
         loading: false,
